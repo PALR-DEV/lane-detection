@@ -1,0 +1,243 @@
+# =============================================================================
+# DATASET FILES - Exclude large dataset files from version control
+# =============================================================================
+
+# TuSimple dataset directory (contains large image and annotation files)
+tusimple/
+TuSimple/
+**/tusimple/
+**/TuSimple/
+
+# Other common dataset directories
+data/
+datasets/
+Data/
+Datasets/
+
+# Compressed dataset files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# MODEL CHECKPOINTS - Exclude trained model files (typically large)
+# =============================================================================
+
+# PyTorch model files
+*.pth
+*.pt
+*.pkl
+*.pickle
+
+# TensorFlow model files
+*.pb
+*.h5
+saved_model/
+checkpoints/
+
+# Model output directories
+models/
+weights/
+outputs/
+
+# =============================================================================
+# PYTHON SPECIFIC - Standard Python gitignore patterns
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# JUPYTER NOTEBOOKS - Exclude notebook outputs and checkpoints
+# =============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# =============================================================================
+# IDE AND EDITOR FILES - Exclude editor-specific files
+# =============================================================================
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# =============================================================================
+# SYSTEM FILES - Exclude OS-generated files
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# LOGS AND TEMPORARY FILES - Exclude runtime generated files
+# =============================================================================
+
+# Log files
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Cache directories
+.cache/
+cache/
+
+# =============================================================================
+# DEVELOPMENT AND TESTING - Exclude development artifacts
+# =============================================================================
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+
+# Profiling data
+*.prof
+
+# =============================================================================
+# PROJECT SPECIFIC - Custom exclusions for this lane detection project
+# =============================================================================
+
+# Training outputs
+training_logs/
+tensorboard_logs/
+wandb/
+
+# Inference results
+results/
+predictions/
+visualizations/
+
+# Experiment tracking
+experiments/
+runs/
+
+# Configuration files with sensitive data
+config_local.py
+secrets.json
+
+# Large temporary files during processing
+*.npy
+*.npz
+processing_temp/
+
+# Generated documentation
+docs/_build/
+site/
