@@ -56,7 +56,7 @@ if __name__ == '__main__':
     # MODEL, LOSS FUNCTION, AND OPTIMIZER SETUP
     # =============================================================================
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("mps" if torch.backendsmps.is_available() else "cpu")
 
     model = SimpleUNet().to(device)
 
